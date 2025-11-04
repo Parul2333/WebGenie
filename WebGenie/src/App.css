@@ -52,6 +52,8 @@ body{
   padding:0;
   box-sizing: border-box;
   overflow-x: hidden;
+  background-color: var(--color-bg);
+  color: var(--color-text);
 }
 
 html{
@@ -95,4 +97,27 @@ html{
   --color-hover: hsl(240, 6%, 15%);
   --color-active: hsl(240, 6%, 18%);
   --color-focus-ring: hsl(270, 100%, 65%);
+}
+
+.nav{
+  border-bottom: 1px solid var(--color-border);
+}
+
+.nav .logo .h3{
+  color: var(--color-accent)
+}
+
+.icon{
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: .3s;
+  border: 1px solid var(--color-border);
+}
+.icon:hover{
+  background-color: var(--color-hover);
 }
